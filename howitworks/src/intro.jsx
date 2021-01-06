@@ -1,20 +1,24 @@
 import React from 'react';
-
+import image from './howitworks.png';
 
 var createReactClass = require('create-react-class');
 
 var Intro = createReactClass({
         render: function() {
+          
           return (
             <div>
               <h1>Music recommendation using sentiment analysis!</h1>
               <p>
-              </p><h2>
-                WELCOME
-              </h2>
+              </p>
+                
+              
               <p />
-              <p style={{fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic'}}>
-                <img src="E:\demo_howitworks\howitworks\public\howitworks.png" alt="" width={800} height={300} />
+              <p style={{justifyContent: 'center', fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic'}}>
+                <img src={image} alt="" class="center" width={1000} height={300} />
+                <br />
+                <br />
+                <br />
                 Hello pal. We, the group"Pro-coders" welcome you at our experiment. This is our project based on Machine Learning algorithms to recommend playlists according to your current taste. <br />
               </p>
               <p>
@@ -22,7 +26,7 @@ var Intro = createReactClass({
                 HOW TO USE :
               </h2>
               <p />
-              <p style={{fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic'}}>
+              <p style={{justifyContent: 'center', fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic'}}>
                 1.Sign up or Log in to the service.<br />
                 2.Here comes the homepage. You can navigate through our project from here. <br />
                 3. What else?
@@ -35,45 +39,45 @@ var Intro = createReactClass({
                 Why did we start?
               </h2>
               <p />
-              <p style={{fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic'}}>
-                Here you go. We wanted to know the general mental state of people in various age groups, also their taste in music.<br /> Let's face it, we all are music lovers. 
-                So we did it.<br /> We want you to have a melodious journey with us.
+              <p style={{justifyContent: 'center', fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic'}}>
+              According to a report from Indiatoday.in, India leads the world in teenage depression.One in 4 teenagers in India suffers from depression.
+              We saw this and while we couldn't treat them clinically, we can help them in coping up from this.
+              Let's face it, we all are music lovers. 
+              We wanted to know the general mental state of people in various age groups. Also their taste in music. We wanted to create a service which services our users from various age groups.
+              So we came up with a combined solution and we did it. 
+              Our project recommends users an appropiate playlist based upon their current mood.
               </p>
               <p>
               </p><h2>
-                Interested in behind the scenes?
+              How it works:
               </h2>
               <p />
-              <p style={{fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic'}}>
-                Well, we capture your face and our algorithms recognise your present mood. 
-                Our playlists are then served you hot.<br /><br />As named Pro-coders, we coded our way here.
-                We used React, HTML and some creativity to develop our front-end part.<br />
-                Now telling about back-end, we used advanced machine learning algorithms. We have coded the facial emotion recogniser using keras with tensorflow backend.<br /> We trained the model using humongous dataset consisting of thousands pf images. This dataset contains images of facial expressions of people. This trained model then recognises your pretty face and current mood. 
-                Then a suitable music playlist is served to you.
-                The survey consists of various visually appealing information about mental state of people in each age group and their music taste as well.
-                Note: We collect your information to power our survey. All the data is safe and passwords are stored encrypted.
-                So you, our uses, are safe.    
+              <p style={{justifyContent: 'center', fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic', }}>
+              First, we collect Sign n Login data from user.
+              This data gets entered in signup n login table simultaneously
+              and gets saved on a created Node server 
+              For security purposes, password hashing is done and thus are encrypted.
+              When logged in, a page displays webcam. 
+              The current expression of user's face is captured and recognised
+              This works by capturing the image and passing the image to our ML algorithm powered by CNN(Convolutional neural network).
+              This expression is passed to survey table along with the user's basic details.
+               User is then redirected to homepage.
+              User gets various options displayed to navigate.
+              When the user opts to listen some music, we recommend him a music playlist based on his recently recognised mood.
+              If a user opts to view our survey, our real-time updating survey gets displayed.
+              The survey is all about the general mental state of people of various age groups
+              Additionally, it also displays people's taste of music in various age groups.
+              This information is presented using visually appealing elements.
+              User may also see our "How it works" page which contains every bit of information needed to create a project liks ours'.
+              At last, an "About Us" page is also present providing info about the brains behind this project.   
               </p>
               <p>
-              </p><h2>
-                How it works: 
+              </p ><h2>
+                 
               </h2>
               <p />
-              <p style={{fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic'}}>
-                we collect Sign n Login data (data categories)
-                data gets entered in signup n login table simultaneously
-                This data gets saved on a created Node server 
-                For security purposes, password hashing id used(encrypted)
-                When logged in,
-                a page displays webcam. 
-                The current emotion of user's face is captured
-                and recognised
-                this works by capturing the image and passing the image to our ML algo. (CNN n Neural networks)
-                this emotion is passed to survey table along with the user's basic details
-                User is then redirected to homepage 
-                User gets various options displayed on the homepage 
-                When the user opts to listen some music,
-                we recommend him a music playlist based on his recently recognised    
+              <p style={{justifyContent: 'center', fontFamily: 'georgia,garamond,serif', fontSize: '16px', fontStyle: 'italic'}}>
+               
               </p>
             </div>
           );
